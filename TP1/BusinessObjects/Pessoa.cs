@@ -31,9 +31,6 @@ namespace BO
         [NonSerialized]
         bool infetado;
 
-        //Esta variável é estática para preservar o seu valor. Fazendo com que seja possível contar o total de pessoas iseridas
-        static int totalP = 0; 
-        //numP ?
         #endregion
 
 
@@ -45,12 +42,11 @@ namespace BO
         /// </summary>
         public Pessoa()
         {
-            totalP++;
+            nome = "";
+            regiao = ""; 
+            sexo = "";
             idade = -1;
             nif = -1;
-            nome = "";
-            regiao = "";
-            sexo = "";
             dataN = DateTime.Today;
             infetado = true;
         }
@@ -67,7 +63,6 @@ namespace BO
         /// <param dataN="d">Data de nascimento da Pessoa</param>
         public Pessoa(string n, string r, string s, int i, int ni, DateTime d)
         {
-            totalP++;
             nome = n;
             regiao =r;
             sexo = s;
@@ -154,19 +149,7 @@ namespace BO
             set { infetado = true;  }
         }
 
-      
-
 
         #endregion
-
-
-        #region Metodos_da_classe
-
-       
-
-       
-
-        #endregion
-
     }
 }

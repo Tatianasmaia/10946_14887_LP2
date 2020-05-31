@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pessoas.cs" />
+    <Compile Include="Utentes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ObjetosNegocio\BusinessObjects.csproj">
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj">
       <Project>{99f90635-f182-47c8-adfa-21f5be1c9caa}</Project>
       <Name>BusinessObjects</Name>
     </ProjectReference>

@@ -1,0 +1,10 @@
+C:\Users\utilizador\Desktop\TP1\BusinessRules\bin\Debug\BusinessRules.dll
+C:\Users\utilizador\Desktop\TP1\BusinessRules\bin\Debug\BusinessRules.pdb
+C:\Users\utilizador\Desktop\TP1\BusinessRules\bin\Debug\DataLayer.dll
+C:\Users\utilizador\Desktop\TP1\BusinessRules\bin\Debug\ObjetosNegocio.dll
+C:\Users\utilizador\Desktop\TP1\BusinessRules\bin\Debug\ObjetosNegocio.pdb
+C:\Users\utilizador\Desktop\TP1\BusinessRules\bin\Debug\DataLayer.pdb
+C:\Users\utilizador\Desktop\TP1\BusinessRules\obj\Debug\BusinessRules.csprojAssemblyReference.cache
+C:\Users\utilizador\Desktop\TP1\BusinessRules\obj\Debug\BusinessRules.csproj.CopyComplete
+C:\Users\utilizador\Desktop\TP1\BusinessRules\obj\Debug\BusinessRules.dll
+C:\Users\utilizador\Desktop\TP1\BusinessRules\obj\Debug\BusinessRules.pdb

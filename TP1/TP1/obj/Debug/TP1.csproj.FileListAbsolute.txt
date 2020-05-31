@@ -4,3 +4,10 @@ C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\TP1.exe
 C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\TP1.pdb
 C:\Users\utilizador\Desktop\TP1\TP1\obj\Debug\TP1.exe
 C:\Users\utilizador\Desktop\TP1\TP1\obj\Debug\TP1.pdb
+C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\BusinessRules.dll
+C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\ObjetosNegocio.dll
+C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\DataLayer.dll
+C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\ObjetosNegocio.pdb
+C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\BusinessRules.pdb
+C:\Users\utilizador\Desktop\TP1\TP1\bin\Debug\DataLayer.pdb
+C:\Users\utilizador\Desktop\TP1\TP1\obj\Debug\TP1.csproj.CopyComplete

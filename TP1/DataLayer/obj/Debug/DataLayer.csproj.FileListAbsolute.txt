@@ -1,0 +1,8 @@
+C:\Users\utilizador\Desktop\TP1\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
+C:\Users\utilizador\Desktop\TP1\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\utilizador\Desktop\TP1\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\utilizador\Desktop\TP1\DataLayer\bin\Debug\ObjetosNegocio.dll
+C:\Users\utilizador\Desktop\TP1\DataLayer\bin\Debug\ObjetosNegocio.pdb
+C:\Users\utilizador\Desktop\TP1\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+C:\Users\utilizador\Desktop\TP1\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\utilizador\Desktop\TP1\DataLayer\obj\Debug\DataLayer.pdb

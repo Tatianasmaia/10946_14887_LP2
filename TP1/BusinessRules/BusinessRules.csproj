@@ -45,13 +45,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj">
+      <Project>{99f90635-f182-47c8-adfa-21f5be1c9caa}</Project>
+      <Name>BusinessObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">
       <Project>{8d65beb7-be22-43bf-9f00-6ed4624e8f92}</Project>
       <Name>DataLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ObjetosNegocio\BusinessObjects.csproj">
-      <Project>{99f90635-f182-47c8-adfa-21f5be1c9caa}</Project>
-      <Name>BusinessObjects</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,5 @@
+C:\Users\utilizador\Desktop\TP1\BusinessObjects\bin\Debug\ObjetosNegocio.dll
+C:\Users\utilizador\Desktop\TP1\BusinessObjects\bin\Debug\ObjetosNegocio.pdb
+C:\Users\utilizador\Desktop\TP1\BusinessObjects\obj\Debug\BusinessObjects.csprojAssemblyReference.cache
+C:\Users\utilizador\Desktop\TP1\BusinessObjects\obj\Debug\ObjetosNegocio.dll
+C:\Users\utilizador\Desktop\TP1\BusinessObjects\obj\Debug\ObjetosNegocio.pdb
