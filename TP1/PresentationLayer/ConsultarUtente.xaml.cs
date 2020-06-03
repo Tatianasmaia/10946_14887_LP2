@@ -32,18 +32,24 @@ namespace PresentationLayer
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void bt_Consultar_Click(object sender, RoutedEventArgs e)
+        private void Consultar_Click(object sender, RoutedEventArgs e)
         {
-            Utente ut = new Utente();
+            List<Utente> listaAuxiliar = new List<Utente>();
 
-            int nif = Int32.Parse(tb_Nif.Text);
+            int nif = Int32.Parse(tb_nif.Text);
 
-            ut = Rules.SearchPatient(nif);
+            listaAuxiliar = Rules.SearchPatient(nif);
 
-            if (ut != null)
+            if (listaAuxiliar.Count == 0)
             {
-                
+                MessageBox.Show("Não existe nenhum utente com esse nif!");
             }
+            else
+            {
+                dataGridUtente.ItemsSource = listaAuxiliar;
+            }
+
+
         }
     }
 }

@@ -41,3 +41,5 @@ C:\Users\utilizador\Desktop\TP1\PresentationLayer\obj\Debug\ConsultarHistorico.g
 C:\Users\utilizador\Desktop\TP1\PresentationLayer\obj\Debug\ConsultarInfetados.g.cs
 C:\Users\utilizador\Desktop\TP1\PresentationLayer\obj\Debug\ConsultarHistorico.baml
 C:\Users\utilizador\Desktop\TP1\PresentationLayer\obj\Debug\ConsultarInfetados.baml
+C:\Users\utilizador\Desktop\TP1\PresentationLayer\obj\Debug\ConsultarSexo.g.cs
+C:\Users\utilizador\Desktop\TP1\PresentationLayer\obj\Debug\ConsultarSexo.baml

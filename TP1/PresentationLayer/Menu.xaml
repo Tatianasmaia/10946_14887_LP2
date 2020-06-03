@@ -14,7 +14,7 @@
         <Button x:Name="Registar" Content="Registar Utente" HorizontalAlignment="Left" Margin="47,63,0,0" VerticalAlignment="Top" Width="155" Height="55" Click="Registar_Click" FontSize="15"/>
         <Button x:Name="Editar" Content="Editar Utente" HorizontalAlignment="Left" Margin="286,63,0,0" VerticalAlignment="Top" Width="155" Height="56" Click="Editar_Click" FontSize="15"/>
         <Button x:Name="Remover" Content="Remover Utente" HorizontalAlignment="Left" Margin="47,148,0,0" VerticalAlignment="Top" Width="155" Height="56" Click="Remover_Click" FontSize="15"/>
-        <Button x:Name="Consultar" Content="Consultar Utente" HorizontalAlignment="Left" Margin="286,148,0,0" VerticalAlignment="Top" Width="155" Height="56" Click="Consultar_Click" FontSize="15"/>
+        <Button Name="Consultar" Content="Consultar Utente" HorizontalAlignment="Left" Margin="286,148,0,0" VerticalAlignment="Top" Width="155" Height="56" Click="Consultar_Click" FontSize="15"/>
         <Button x:Name="Sair" Content="Sair" HorizontalAlignment="Left" Margin="415,514,0,0" VerticalAlignment="Top" Width="73" Height="29" Click="Sair_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="163,10,0,0" TextWrapping="Wrap" Text="Gestão Hospitalar" VerticalAlignment="Top" Height="48" Width="234" FontSize="24"/>
         <Button Name="Consultar_Idade" Content="Consultar Utentes por Idade" HorizontalAlignment="Left" Margin="19,232,0,0" VerticalAlignment="Top" Width="207" Height="56" Click="ConsultarIdade_Click" FontSize="15"/>

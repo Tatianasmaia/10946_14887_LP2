@@ -28,10 +28,16 @@ namespace PresentationLayer
                 //Voltar ao menuEditar / EditarInformacao
             }
 
+            if (cb_F.IsChecked == true && cb_M.IsChecked == true)
+            {
+                MessageBox.Show("Apenas pode escolher uma opção!");
+            }
+
             int numU = Int32.Parse(tb_numU.Text);
 
-            int aux = Rules.EditInformation(tb_Nome.Text, tb_Idade.Text, tb_Nif.Text, tb_Regiao.Text, tb_Sexo.Text, numU);
+            int aux = Rules.EditInformation(tb_Nome.Text, tb_Idade.Text, tb_Nif.Text, tb_Regiao.Text, cb_F.IsEnabled, cb_M.IsEnabled, numU);
 
+            //Faz as verificações dependendo do valor do return 
             if (aux == 0)
             {
                 MessageBox.Show("Não preencheu nenhum campo!");
@@ -56,6 +62,10 @@ namespace PresentationLayer
             {
                 MessageBox.Show("O número de utente que inseriu não existe!");
             }
+
+            //Voltar ao menu
+            Menu expenseReportPage = new Menu();
+            this.NavigationService.Navigate(expenseReportPage);
         }
     }
 }

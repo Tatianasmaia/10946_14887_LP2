@@ -29,10 +29,10 @@
         <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="21,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="249" Name="tb_Idade"/>
         <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="34" Margin="21,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"  RenderTransformOrigin="0.498,-0.046" Name="tb_Nif"/>
         <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="34" Margin="21,369,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="249" Name="tb_Regiao"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="34" Margin="21,428,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="249" RenderTransformOrigin="2.263,1.14" Name="tb_Sexo"/>
         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="69,128,0,0" TextWrapping="Wrap" Text="Preencha só os campos que pretende editar! " VerticalAlignment="Top" FontSize="16" Height="22" Width="319" Grid.ColumnSpan="2"/>
         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="43,34,0,0" TextWrapping="Wrap" Text="Insira o número do utente que pretenda editar! " VerticalAlignment="Top" FontSize="16" Height="21" Width="376" Grid.ColumnSpan="2"/>
         <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="75,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Name="tb_numU"/>
-
+        <CheckBox Name="cb_F" Content="Feminino" Grid.Column="3" HorizontalAlignment="Left" Margin="21,432,0,0" VerticalAlignment="Top" FontSize="16" Height="25" Width="84" />
+        <CheckBox Name="cb_M" Content="Masculino" Grid.Column="3" HorizontalAlignment="Left" Margin="161,432,0,0" VerticalAlignment="Top" FontSize="16" Height="25" Width="109"/>
     </Grid>
 </Page>

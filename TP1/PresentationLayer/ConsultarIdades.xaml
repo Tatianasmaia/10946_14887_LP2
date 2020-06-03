@@ -16,7 +16,7 @@
                 <DataGridTextColumn Binding="{Binding Nome}" Header="Nome"/>
                 <DataGridTextColumn Binding="{Binding Nif}" Header="Nif"/>
                 <DataGridTextColumn Binding="{Binding Regiao}" Header="Regiao"/>
-                <DataGridTextColumn Binding="{Binding Sexo}" Header="Sexo"/>
+                <DataGridTextColumn Binding="{Binding Feminino}" Header="Feminino"/>
                 <DataGridTextColumn Binding="{Binding NumUtente}" Header="Numero Utente"/>
             </DataGrid.Columns>
 

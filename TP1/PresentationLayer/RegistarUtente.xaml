@@ -5,28 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="503.035" Width="453.125">
+        Title="RegistarUtente" Height="503.035" Width="453.125">
     <Grid Margin="10,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="77*"/>
-            <ColumnDefinition Width="255*"/>
-            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <Button Content="Registar Utente" Grid.Column="2" HorizontalAlignment="Left" Margin="45,389,0,0" VerticalAlignment="Top" Width="181" Height="34" Click="Registar_Click" Grid.ColumnSpan="2" FontSize="15"/>
-        <!--  <Button Content="Voltar" Grid.Column="3" HorizontalAlignment="Left" Margin="263,450,0,0" VerticalAlignment="Top" Width="75" Height="27" Click="Voltar_Click"/> -->
-        <TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="86,19,0,0" TextWrapping="Wrap" Text="Registar Utente" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="86,19,0,0" TextWrapping="Wrap" Text="Registar Utente" VerticalAlignment="Top" FontSize="20" Height="27" Width="136"/>
         <TextBlock HorizontalAlignment="Left" Margin="17,89,0,0" TextWrapping="Wrap" Text="Nome: " VerticalAlignment="Top" RenderTransformOrigin="-1.247,-0.229" Grid.Column="2" Height="23" Width="56" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="17,140,0,0" TextWrapping="Wrap" Text="Idade: " VerticalAlignment="Top" RenderTransformOrigin="-1.247,-0.229" Grid.Column="2" Height="32" Width="64" FontSize="18" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="17,193,0,0" TextWrapping="Wrap" Text="NIF: " VerticalAlignment="Top" RenderTransformOrigin="-1.247,-0.229" Grid.Column="2" Height="21" Width="46" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="13,248,0,0" TextWrapping="Wrap" Text="Região: " VerticalAlignment="Top" RenderTransformOrigin="-1.247,-0.229" Grid.Column="2" Height="31" Width="64" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="17,304,0,0" TextWrapping="Wrap" Text="Sexo: " VerticalAlignment="Top" RenderTransformOrigin="-1.247,-0.229" Grid.Column="2" Height="32" Width="50" FontSize="18"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="31" Margin="22,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" Name="tb_Nome" Grid.ColumnSpan="2" />
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="22,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" Name="tb_Idade" Grid.ColumnSpan="2"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="22,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Name="tb_Nif" Grid.ColumnSpan="2"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="35" Margin="22,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Name="tb_Regiao" Grid.ColumnSpan="2"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="34" Margin="22,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Name="tb_Sexo" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="31" Margin="22,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" Name="tb_Nome" />
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="22,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" Name="tb_Idade"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="22,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Name="tb_Nif"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="35" Margin="22,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Name="tb_Regiao"/>
+        <CheckBox Name="cb_F" Content="Feminino" Grid.Column="3" HorizontalAlignment="Left" Margin="22,308,0,0" VerticalAlignment="Top" FontSize="15" Height="25" Width="84" />
+        <CheckBox Name="cb_M" Content="Masculino" Grid.Column="3" HorizontalAlignment="Left" Margin="138,308,0,0" VerticalAlignment="Top" FontSize="15" Height="25" Width="107"/>
+
 
     </Grid>
 </Page>

@@ -67,14 +67,14 @@ namespace BR
         /// <param name="nif">nif do utente a pesquisar</param>
         /// <returns>false-> Caso o utente já tenha sido inserido
         ///           true-> Caso o utente tenha sido inserido com sucesso</returns>
-        public static Utente SearchPatient(int nif)
+        public static List<Utente> SearchPatient(int nif)
         {
             return Utentes.SearchPatient(nif);
         }
 
-        public static int EditInformation(string nome, string idade, string nif, string regiao, string sexo, int numU)
+        public static int EditInformation(string nome, string idade, string nif, string regiao, bool f, bool m, int numU)
         {
-            return Utentes.EditInformation(nome, idade, nif, regiao, sexo, numU);
+            return Utentes.EditInformation(nome, idade, nif, regiao, f, m, numU);
         }
 
         /// <summary>
@@ -132,9 +132,9 @@ namespace BR
         /// </summary>
         /// <param name="sexo"></param>
         /// <returns></returns>
-        public static List<Utente> ConsultGender(string sexo)
+        public static List<Utente> ConsultGender(bool feminino)
         {
-            return Utentes.ConsultGender(sexo);
+            return Utentes.ConsultGender(feminino);
         }
 
         /// <summary>

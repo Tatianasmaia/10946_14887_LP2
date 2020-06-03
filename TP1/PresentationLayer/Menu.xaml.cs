@@ -87,8 +87,8 @@ namespace PresentationLayer
         /// <param name="e"></param>
         private void ConsultarSexo_Click(object sender, RoutedEventArgs e)
         {
-            //    ConsultarSexo expenseReportPage = new ConsultarSexo();
-            //    this.NavigationService.Navigate(expenseReportPage);
+            ConsultarSexo expenseReportPage = new ConsultarSexo();
+            this.NavigationService.Navigate(expenseReportPage);
         }
 
         /// <summary>

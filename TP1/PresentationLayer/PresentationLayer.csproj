@@ -67,6 +67,9 @@
     <Compile Include="ConsultarRegiao.xaml.cs">
       <DependentUpon>ConsultarRegiao.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarSexo.xaml.cs">
+      <DependentUpon>ConsultarSexo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarUtente.xaml.cs">
       <DependentUpon>ConsultarUtente.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ConsultarRegiao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConsultarSexo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

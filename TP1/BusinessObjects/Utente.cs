@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BO
 {
@@ -38,13 +34,12 @@ namespace BO
         /// <summary>
         /// Executado quando houver "new"
         /// </summary>
-        /// <param name="n"></param>
-        /// <param name="r"></param>
-        /// <param name="s"></param>
-        /// <param name="i"></param>
-        /// <param name="ni"></param>
-        /// <param name="d"></param>
-        public Utente(string n, string r, string s, int i, int ni) : base(n, r, s, i, ni)
+        /// <param name="n">nome</param>
+        /// <param name="r">regiao</param>
+        /// <param name="f">feminino </param>
+        /// <param name="i">idade</param>
+        /// <param name="ni">nif</param>
+        public Utente(string n, string r, bool f, int i, int ni) : base(n, r, f, i, ni)
         {
             totalUtentes++;
             numUtente = totalUtentes;
@@ -54,6 +49,14 @@ namespace BO
         #endregion
 
         #region Propriedades
+
+        /// <summary>
+        /// Manipula o atributo infetado
+        /// </summary>
+        public bool Infetado
+        {
+            set { infetado = true; }
+        }
 
         /// <summary>
         /// Manipula o atributo "numUtente"

@@ -72,8 +72,7 @@ namespace DL
         /// 0- Caso a idade inserida não seja válida
         /// 1- Caso o número de dígitos não seja válido
         /// 2- Caso o nif inserido já esteja registado
-        /// 3- Caso o sexo inserido não seja válido
-        /// 4- Caso o utente tenha sido adicionado à lista com sucesso</returns>
+        /// 3- Caso o utente tenha sido adicionado à lista com sucesso</returns>
         public static int VerifyPatient(Utente u)
         {
             bool aux;
@@ -106,15 +105,8 @@ namespace DL
                 }
             }
 
-            //Verifica o sexo
-            if (u.Sexo != "feminino" && u.Sexo != "masculino")
-            {
-                return 3;
-
-            }
-
             InsertPatient(u);
-            return 4;
+            return 3;
         }
 
         /// <summary>
@@ -176,14 +168,16 @@ namespace DL
         /// <returns>0- se a lista estiver nula
         ///          1- Caso o cliente tenha sido removido da lista de infetados com sucesso
         ///          2- Se o id inserido não estiver inserido na lista</returns>
-        public static Utente SearchPatient(int nif)
+        public static List<Utente> SearchPatient(int nif)
         {
-           
+            listaAuxiliar.Clear();
+
             foreach (Utente ut in listaUtentes)
             {
                 if (ut.Nif == nif)
                 {
-                    return ut;
+                    listaAuxiliar.Add(ut);
+                    return listaAuxiliar;
                 }
             }
 
@@ -200,10 +194,10 @@ namespace DL
         /// <param name="sexo">sexo do utente</param>
         /// <param name="numU">numero de utente</param>
         /// <returns></returns>
-        public static int EditInformation(string nome, string idade, string nif, string regiao, string sexo, int numU)
+        public static int EditInformation(string nome, string idade, string nif, string regiao, bool f, bool m, int numU)
         {
             //Caso nenhuma textBox tenha sido preenchida dá return a 0
-            if (string.IsNullOrWhiteSpace(nome) && string.IsNullOrWhiteSpace(idade) && string.IsNullOrWhiteSpace(nif) && string.IsNullOrWhiteSpace(regiao) && string.IsNullOrWhiteSpace(sexo)) return 0;
+            if (string.IsNullOrWhiteSpace(nome) && string.IsNullOrWhiteSpace(idade) && string.IsNullOrWhiteSpace(nif) && string.IsNullOrWhiteSpace(regiao) && f == false && m == false) return 0;
 
             foreach (Utente ut in listaUtentes)
             {
@@ -263,11 +257,17 @@ namespace DL
                         ut.Regiao = regiao;
                     }
 
-                    //Verifica se a caixa do sexo foi preenchida para fazer a edição do sexo
-                    if (!string.IsNullOrWhiteSpace(sexo)) 
+                    //Se f for verdadeiro, isso implica que o utilizador pretende mudar o sexo para feminino 
+                    if(f == true && m == false)
                     {
-                        ut.Sexo = sexo;    
+                        ut.Feminino = false;
                     }
+                    //Caso a checkBox do masculino estiver selecionada, significa que o utilizador pretende mudar o sexo para masculino
+                    else
+                    {
+                        ut.Feminino = false;
+                    }
+                    
 
                     return 4;
 
@@ -387,19 +387,32 @@ namespace DL
         /// </summary>
         /// <param name="sexo"></param>
         /// <returns>Retorna a listaAuxiliar</returns>
-        public static List<Utente> ConsultGender(string sexo)
+        public static List<Utente> ConsultGender(bool feminino)
         {
             listaAuxiliar.Clear();
 
-            foreach (Utente u in listaUtentes)
+            if (feminino == true)
             {
-                if (u.Sexo == sexo)
+                foreach (Utente u in listaUtentes)
                 {
-                    listaAuxiliar.Add(u);
+                    if (u.Feminino == true)
+                    {
+                        listaAuxiliar.Add(u);
+                    }
                 }
+                return listaAuxiliar;
             }
-
-            return listaAuxiliar;
+            else
+            {
+                foreach (Utente u in listaUtentes)
+                {
+                    if (u.Feminino == false)
+                    {
+                        listaAuxiliar.Add(u);
+                    }
+                }
+                return listaAuxiliar;
+            }
         }
 
         /// <summary>

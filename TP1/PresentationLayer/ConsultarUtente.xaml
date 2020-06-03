@@ -5,12 +5,23 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PresentationLayer"
       mc:Ignorable="d"
-      Title="ConsultarUtente" Height="653.2" Width="987.2">
+      Title="ConsultarUtente" Height="506.95" Width="987.2">
 
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="343,10,0,0" TextWrapping="Wrap" Text="Consultar Utente Através do Nif" VerticalAlignment="Top" FontSize="22" Height="45" Width="516"/>
-        <TextBox HorizontalAlignment="Left" Height="31" Margin="403,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Name="tb_Nif"/>
-        <Button Content="Consultar" HorizontalAlignment="Left" Margin="411,119,0,0" VerticalAlignment="Top" Width="151" Height="25" Name="bt_Consultar" Click="bt_Consultar_Click"/>
+    <Grid Margin="0,0,0,10">
+        <TextBlock HorizontalAlignment="Left" Margin="348,10,0,0" TextWrapping="Wrap" Text="Consultar Utente através do Nif" VerticalAlignment="Top" FontSize="22" Height="45" Width="315"/>
+        <TextBox HorizontalAlignment="Left" Height="28" Margin="409,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Name="tb_nif"/>       
+        <Button Name="Consultar" Content="Consultar" HorizontalAlignment="Left" Margin="431,104,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="Consultar_Click"/>
+        <DataGrid Name="dataGridUtente" HorizontalAlignment="Left" Height="251" Margin="234,194,0,0" VerticalAlignment="Top" Width="495" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding NumUtente}" Header="Numero Utente"/>
+                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome"/>
+                <DataGridTextColumn Binding="{Binding Idade}" Header="Idade"/>
+                <DataGridTextColumn Binding="{Binding Regiao}" Header="Regiao"/>
+                <DataGridTextColumn Binding="{Binding Feminino}" Header="Feminino"/>
 
+            </DataGrid.Columns>
+
+        </DataGrid>
+        
     </Grid>
 </Page>

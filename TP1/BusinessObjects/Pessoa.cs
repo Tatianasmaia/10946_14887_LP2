@@ -30,9 +30,8 @@ namespace BO
         #region Estado
 
         int idade, nif;
-        string nome, regiao, sexo;
-        [NonSerialized]
-        bool infetado;
+        string nome, regiao;
+        bool feminino;
 
         #endregion
 
@@ -46,11 +45,10 @@ namespace BO
         public Pessoa()
         {
             nome = "";
-            regiao = ""; 
-            sexo = "";
+            regiao = "";
             idade = -1;
             nif = -1;
-            infetado = true;
+            feminino = true;
         }
 
         /// <summary>
@@ -62,15 +60,13 @@ namespace BO
         /// <param sexo="s">Sexo da Pessoa</param>
         /// <param name="i">Idade da Pessoa</param>
         /// <param nif="ni">Nif da Pessoa</param>
-        /// <param dataN="d">Data de nascimento da Pessoa</param>
-        public Pessoa(string n, string r, string s, int i, int ni)
+        public Pessoa(string n, string r, bool f, int i, int ni)
         {
             nome = n;
-            regiao =r;
-            sexo = s;
+            regiao = r;
             idade = i;
             nif = ni;
-            infetado = true;
+            feminino = true;
         }
 
         #endregion
@@ -119,20 +115,15 @@ namespace BO
         }
 
         /// <summary>
-        /// Manipula o atributo "sexo"
-        /// string sexo;
+        /// Manipula o atributo "feminino"
+        /// bool feminino;
         /// </summary>
-        public string Sexo
+        public bool Feminino
         {
-            get { return sexo; }
-            set { sexo = value; }
+            get { return feminino; }
+            set { feminino = true; }
         }
 
-
-        public bool Infetado
-        {
-            set { infetado = true;  }
-        }
 
 
         #endregion

@@ -27,7 +27,7 @@ namespace PresentationLayer
             int aux;
 
             //Verificar se todos os campos estão preenchidos
-            if(string.IsNullOrEmpty(tb_Nome.Text)|| string.IsNullOrEmpty(tb_Idade.Text)|| string.IsNullOrEmpty(tb_Nif.Text)|| string.IsNullOrEmpty(tb_Regiao.Text)|| string.IsNullOrEmpty(tb_Sexo.Text))
+            if(string.IsNullOrEmpty(tb_Nome.Text)|| string.IsNullOrEmpty(tb_Idade.Text)|| string.IsNullOrEmpty(tb_Nif.Text)|| string.IsNullOrEmpty(tb_Regiao.Text))
             {
                 MessageBox.Show("Não pode deixar espacos em branco!");
 
@@ -59,7 +59,28 @@ namespace PresentationLayer
             }
             
             u.Regiao = tb_Regiao.Text;
-            u.Sexo = tb_Sexo.Text;
+
+            //Caso o utilizador escolha as duas Checkbox
+            if (cb_F.IsChecked == true && cb_M.IsChecked == true)
+            {
+                MessageBox.Show("Apenas pode escolher uma opção!");
+            }
+            //Caso o utilizador não escolha nenhuma CheckBox
+            else if (cb_F.IsChecked == false && cb_M.IsChecked == false)
+            {
+                MessageBox.Show("Tem que escolher uma opção!");
+            }
+            else
+            {
+                if (cb_F.IsChecked == true)
+                {
+                    u.Feminino = true;
+                }
+                else if (cb_M.IsChecked == true)
+                {
+                    u.Feminino = false;
+                }
+            }
 
             //Envia o utente auxiliar com a informação que o utilizador inseriu para a função VerifyPatient que verifica se todos os dados inseridos são válidos
             aux = Rules.VerifyPatient(u);
@@ -77,10 +98,6 @@ namespace PresentationLayer
                 MessageBox.Show("O nif já foi registado por outro utente!");
             }
             else if (aux == 3)
-            {
-                MessageBox.Show("O sexo que inseriu não é valido!");
-            }
-            else if (aux == 4)
             {
                 MessageBox.Show("O utente foi registado com sucesso!");
             }
